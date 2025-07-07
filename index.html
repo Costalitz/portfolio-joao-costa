@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - João Pedro Costa</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="submenu">
+          <a href="#sobre">Sobre ▾</a>
+          <div class="sub-conteudo">
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#trajetoria">Trajetória Profissional</a>
+          </div>
+        </div>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <p>
+          E aí! Meu nome é João Pedro Costa, sou estudante de Análise e
+          Desenvolvimento de Sistemas e atualmente estou mergulhado no mundo do
+          desenvolvimento web, com um foco especial em front-end. Sempre curti
+          entender como as coisas funcionam por trás das telas e hoje estou
+          colocando isso em prática com código, design e café. Tento manter uma
+          rotina de estudos bem estruturada (quando a saúde deixa 😅), e mesmo
+          nos dias mais puxados, sigo firme porque realmente curto o processo.
+        </p>
+        <br />
+        <p>
+          Antes da programação, eu dava aulas de música — mais precisamente de
+          bateria — e acho que isso moldou muito do meu jeito de aprender e
+          ensinar. Gosto de aprender fazendo e de transformar conhecimento em
+          algo útil (e bonito, se possível). Tenho estudado por plataformas como
+          a DIO e a Cod3r, e tô sempre buscando melhorar, seja com pequenos
+          projetos ou quebrando a cabeça com algum bug. A ideia aqui é
+          compartilhar um pouco de quem sou, do que tô aprendendo e, quem sabe,
+          trocar umas ideias também.
+        </p>
+      </section>
+
+      <section id="formacao">
+        <h2>Formação</h2>
+        <ul>
+          <li>
+            UNINTER – Tecnólogo em Análise e Desenvolvimento de Sistemas (em
+            andamento)
+          </li>
+          <li>DIO - Bootcamp Python Developer (em andamento)</li>
+          <li>Cod3r – Cursos de HTML e CSS</li>
+          <li>SENAI - Assistente de Projeto FabLab</li>
+          <li>Idiomas: Português (nativo), Inglês (intermediário)</li>
+        </ul>
+      </section>
+
+      <section id="trajetoria">
+        <h2>Trajetória Profissional</h2>
+        <p>
+          Antes de me aventurar pelo universo da programação, trabalhei dando
+          aulas de música, com foco em bateria. Essa experiência me ensinou
+          muito sobre disciplina, escuta ativa, adaptação e como ensinar
+          conceitos complexos de um jeito simples. Dar aula era algo que exigia
+          sensibilidade, paciência e criatividade — tudo isso acabou
+          contribuindo bastante pro meu jeito de aprender e resolver problemas
+          hoje.
+        </p>
+        <br />
+        <p>
+          A decisão de migrar pra área de tecnologia veio de uma vontade real de
+          construir algo que unisse lógica e expressão criativa. Mesmo passando
+          por desafios de saúde nesse processo, tenho buscado me desenvolver de
+          forma constante. Estudo em ritmo próprio, me organizo com métodos que
+          funcionam pra mim e encaro os erros como parte natural da caminhada. A
+          cada projeto simples que faço, me sinto mais preparado e confiante
+          nessa transição.
+        </p>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfólio</h2>
+
+        <div class="projeto">
+          <pre><code>
+                //Projeto-1 
+
+print('Seja bem-vindo à Loja de Eletrônicos do João P. M. S. Costa!')
+
+produto = float(input('\n Digite o preço por unidade do produto: '))
+quantidade = float(input('Digite a quantidade do produto: '))
+
+valor = produto * quantidade
+
+porcentagem_desconto = 0
+
+if valor < 2500:
+  print('Produto com valor inferior à R$2.500.')
+
+elif valor >= 2500 and valor < 6000:
+  porcentagem_desconto = 4 / 100
+  print(f'Preço do produto, sem desconto: R${valor}.')
+
+elif valor >= 6000 and valor < 10000:
+  porcentagem_desconto = 7 / 100
+  print(f'Preço do produto, sem desconto: R${valor}.')
+
+elif valor >= 10000:
+  porcentagem_desconto = 11 / 100
+  print(f'Preço do produto, sem desconto: R${valor}.')
+
+else:
+  print('Algo deu errado. Tente novamente mais tarde!')
+
+desconto = (valor * porcentagem_desconto)
+
+print(f'Preço do produto, com desconto: R${valor - desconto}.')
+print('Obrigado pela compra. Volte sempre!')
+             </code></pre>
+          <img
+            src="/src/imagens/questao-1-copia.png"
+            alt="Print do projeto 1"
+          />
+        </div>
+
+        <div class="projeto">
+          <pre><code>
+                //Projeto-2 
+  
+print('Seja bem-vindo a loja de Gelados do João P. M. S. Costa!\n')
+  
+print('-' * 15 + 'Produtos' + '-' * 15)
+print('-' * 40)
+print('\n tamanhos | cupuaçu (CP) | açaí (AC)')
+print('   P  |  R$ 9.00  |  R$ 11.00')
+print('   M  |  R$ 14.00 |  R$ 16.00')
+print('   G  |  R$ 18.00 |  R$ 20.00')
+print('-' * 40)
+  
+preco_final = 0
+  
+while True:
+  
+    while True:
+      sabor = input('Escolha o sabor do produto, (CP/AC): ').upper()
+      if sabor in ['CP', 'AC']:
+          break
+  
+      else:
+          print('Sabor inválido! Escolha novamente.')
+  
+    while True:
+      tamanho = input('Escolha um tamanho: ').upper()
+      if tamanho in ['P', 'M', 'G']:
+          break
+  
+      else:
+          print('Tamanho inválido! Escolha novamente.')
+  
+    if sabor == 'CP':
+      if tamanho == 'P':
+          preco = 9.00
+      elif tamanho == 'M':
+          preco = 14.00
+      else:
+          preco = 18.00
+  
+    elif sabor == 'AC':
+      if tamanho == 'P':
+          preco = 11.00
+      elif tamanho == 'M':
+          preco = 16.00
+      else:
+          preco = 20.00
+  
+  print(f'\nVocê pediu um: {sabor}, no tamanho: {tamanho}. Preço do pedido: R$ {preco}')
+  
+  preco_final += preco
+  
+  while True:
+      continuar = input('\nDeseja pedir mais alguma coisa? (S/N): ').upper()
+      if continuar in ['S', 'N']:
+          break
+      else:
+          print('Resposta inválida. Digite [ S ] para sim ou [ N ] para não.')
+  
+  if continuar == 'N':
+      break
+  
+print(f'Totalizando, o pedido ficou em: R$ {preco_final}')
+print('Obrigado pela compra! Volte sempre! :D')
+             </code></pre>
+          <img
+            src="/src/imagens/questao-2a-copia.png"
+            alt="Print do projeto 2"
+          />
+        </div>
+        <div class="projeto">
+          <pre><code>
+                //Projeto-3 
+  
+print('Bem-vindo ao XeroX do João P. M. S. Costa!')
+
+print('-'*16 + 'Serviços:' + '-' * 16)
+print('-' * 41)
+print('DIG - Digitalização' + ' ' * 5 + '|' + ' ' * 2 + 'ICO - Impressão Colorida')
+print('IPB - Impressão Preto-Branco' + ' ' * 2 + '|' + ' ' * 2 + 'FOT - Fotocópia')
+print('-' * 41)
+
+def escolha_servico():
+    while True:
+        servico = input('\nEscolha o serviço desejado (DIG/ICO/IPB/FOT): ')
+        if servico == 'DIG':
+            return 1.10
+        elif servico == 'ICO':
+            return 1.00
+        elif servico == 'IPB':
+            return 0.40
+        elif servico == 'FOT':
+            return 0.20
+        else:
+            print('Opção inválida! Escolha um dos serviços oferecidos: DIG, ICO, IPB ou FOT.')
+
+def num_pagina():
+    while True:
+        try:
+            numero = int(input('\nDigite o número de páginas: '))
+            if numero >= 20000:
+                print('Limite de 20.000 pág excedido. Tente novamente.')
+            elif numero < 0:
+                print('Quantidade inválida. Digite um número positivo.')
+            elif numero < 20:
+                return numero
+            elif numero < 200:
+                desconto = numero * (15 / 100)
+                return numero - desconto
+            elif numero < 2000:
+                desconto = numero * (20 / 100)
+                return numero - desconto
+            else:
+                desconto = numero * (25 / 100)
+                return numero - desconto
+        except ValueError:
+            print('Valor inválido! Digite um número inteiro.')
+
+def servico_extra():
+    while True:
+        extra = input('\nDeseja algum serviço adicional? (1 - Encadernação Simples / 2 - Capa Dura / 0 - Nada): ')
+        if extra == '1':
+            return 15.00     # valor do serviço de encadernação simples.
+        elif extra == '2':
+            return 40.00     # valor do serviço de capa dura.
+        elif extra == '0':
+            return 0.00
+        else:
+            print('Opção inválida! Digite 1, 2 ou 0.')
+
+
+valor_servico = escolha_servico()
+quantidade = num_pagina()
+valor_extra = servico_extra()
+
+preco_total = (valor_servico * quantidade) + valor_extra
+
+print('-' * 15 + 'RESUMÃO DO PEDIDO' + '-' * 15)
+print(f'\nValor do serviço escolhido p/página: R$ {valor_servico}')
+print(f'\nValor do serviço adicional: R$ {valor_extra}')
+print(f'\nPedido final: R$ {preco_total}')
+print('Obrigado por utilizar nossos serviços! Volte sempre! :D')
+             </code></pre>
+          <img
+            src="/src/imagens/questao-3a-copia.png"
+            alt="Print do projeto 3"
+          />
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <form>
+          <input type="text" placeholder="Nome" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Mensagem" rows="5"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Pelo trabalho que me deu, aceito nota máx de boa.</p>
+    </footer>
+  </body>
+</html>
